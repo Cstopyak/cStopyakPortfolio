@@ -1,0 +1,234 @@
+
+.nav-container{
+background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 0 auto;
+max-width: 1400px;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+nav{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+.logoBtn{
+    
+    color: white;
+    display: flex;
+    padding: 5px 10px;
+    border-bottom: 1px solid #C33764;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logoBtn a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    width: 55px;
+    align-self: center;
+    
+}
+
+.bar1,
+.bar2,
+.bar3{
+    background-color: white;
+    width: 35px;
+    padding: 1px;
+    margin: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.animationBar.bar1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+    background: white;
+    width: 30px;
+
+}
+.animationBar.bar2{
+    opacity: 0;
+    
+    
+}
+
+.animationBar.bar3{
+    transform: rotate(45deg) translate(-4px, -5px);
+    background: white;
+    width: 30px;
+    
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.links{
+    
+    width: 100%;
+    
+    transform: translateX(-100%);
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 10;
+    opacity: 1;
+    transition: transform 0.4s ease-in-out;
+}
+
+.new-links{
+    width: 100%;
+    transform: translateX(0%);
+    position: fixed;
+    top: 51;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.links li a{
+    display: block;
+    padding: 10px ;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+
+}
+.links li a:hover{
+    padding: 10px 25px;
+    color: white;
+    
+}
+
+.adminLi{
+    display: none;
+
+}
+.admin{
+    color: #C33764;
+}
+
+
+@media screen and (min-width: 664px){
+    .logoBtn{
+        border: none;
+        padding: 0;
+    }
+
+.btn{ 
+    display: none;
+
+}
+nav{
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+
+}
+.links{
+    position: relative;
+    display: flex;
+    width: auto;
+    top: auto;
+    transform: translateX(0%);
+}
+.new-links{
+    width: 100%;
+    transform: translateX(0%);
+    position: relative;
+    top: auto;
+}
+.links li a{
+    font-size: 18px;
+}
+
+.links li a:hover{
+    padding: 10px;
+    background: none;
+}
+
+}
+
+
+
+
+
+
+
+
+/* .nav {
+    display: flex;
+    height: 55px;
+    z-index: 100;
+    position: sticky;
+    width: 1000;
+    top:0;
+    padding: 0;
+} */
+.nav__list{
+    display: flex;
+    height: 100%;
+    background: rgb(46, 46, 85);
+    padding: 0;
+    margin: 0 auto;
+}
+.nav__section{
+    height: 55px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: white;
+    margin: 0 22.5px 0 0;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav__li{
+    transition: color 200ms ease;
+}
+
+
+
+
+/* .header{
+    background-color: #453bd8;   
+    Height: 120px;
+    align-items: center;
+    position: sticky;
+    
+    
+}
+
+.header__navHome{
+    height: 80px;
+    text-align: center;
+    padding-left: 12px;
+    justify-content: space-evenly;
+    display: flex;
+   
+}
+.header__navAbout{
+    text-align: center;
+    padding-left: 12px;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+.header__navProjects{
+    text-align: center;
+    padding-left: 12px;
+    justify-content: space-evenly;
+    display: flex;
+    
+} */

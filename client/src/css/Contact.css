@@ -1,0 +1,106 @@
+.Contact{
+    margin: -3px;
+}
+
+.contactForm-center{
+    max-width: 1280px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.contact_form form{
+    width: 100%;
+    box-shadow: 0 0 2px 1px gray;
+    background: #C33764;  
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact_form form p{
+    margin-bottom: 10px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+}
+
+.contact_form form label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact_form button{
+    align-items: center;
+    margin-top: 15px;
+    padding: 5px;
+    background:rgb(19,126,233);
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-size:16px;
+    letter-spacing: 0.1rem;
+    width: 160px;
+    align-self: center;
+
+}
+.contact_form form input,.contact_form form textarea{
+    margin-bottom: 10px;
+    padding: 7px;
+    border:1px solid white;
+}
+
+button .load{
+    width: 100%;
+
+}
+
+button .load img{
+    width:60px ;
+    
+
+}
+
+
+
+@media screen and (min-width:664px){
+    .contactForm-center{
+        padding: 10px;
+    }
+    .contact_form{
+        padding: 10px;
+        
+    }
+    
+
+
+    }
+
+    @media screen and (min-width:864px){
+        .contactForm-center{
+            justify-content: space-evenly;
+    }
+
+        .contact_form{
+        
+            padding: 10px;
+        
+        }
+
+        
+
+    }
+
+
+
+
+
+
+
